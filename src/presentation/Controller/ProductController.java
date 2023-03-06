@@ -249,8 +249,7 @@ public class ProductController implements Initializable {
         idColumn.setCellValueFactory( new PropertyValueFactory<>("id"));
         referenceColumn.setCellValueFactory( new PropertyValueFactory<>("reference"));
         nomColumn.setCellValueFactory( new PropertyValueFactory<>("name"));
-        priceColumn.setCellValueFactory( new PropertyValueFactory<>("category"));
-
+        priceColumn.setCellValueFactory( new PropertyValueFactory<>("price"));
         nameSearch.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {

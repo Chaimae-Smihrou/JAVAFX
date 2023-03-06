@@ -125,7 +125,7 @@ public class ProductDaoImpl implements ProductDaoInterface {
             PreparedStatement preparedStatement = connection.prepareStatement(
                     "SELECT PRODUCTS.* ,CATEGORY.name as cat " +
                             "FROM PRODUCTS LEFT JOIN CATEGORY ON CATEGORY.id = PRODUCTS.id_cat " +
-                            " WHERE PRODUCTS.name like ? OR PRODUCTS.reference like ? OR CATEGORY.name like ? "+
+                            " WHERE PRODUCTS.name like ? OR PRODUCTS.reference like ? OR CATEGORY.name like ?"+
                             "ORDER BY 1");
             preparedStatement.setString(1,"%"+query+"%");
             preparedStatement.setString(2,"%"+query+"%");

@@ -15,7 +15,6 @@ public class ProductView  extends Application {
         System.out.println(getClass().getResource("../productView.fxml"));
         BorderPane root= FXMLLoader.load(getClass().getResource("../productView.fxml"));
         Scene scene=new Scene(root);
-        //scene.getStylesheets().add(getClass().getResource("style.css").toString());
         primaryStage.setScene(scene);
         primaryStage.show();
     }
